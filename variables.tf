@@ -17,7 +17,7 @@ variable "target_tags" {
 }
 
 variable "protocol" {
-  type = list(string)
+  type = string
   description = "The name of the protocol to allow. This value can either be one of the following well known protocol strings (tcp, udp, icmp, esp, ah, sctp), or the IP protocol number, or all"
 }
 
