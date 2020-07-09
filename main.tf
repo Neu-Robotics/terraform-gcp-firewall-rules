@@ -1,4 +1,4 @@
-resource "google_compute_firewall" "fw-rule" {
+resource "google_compute_firewall" "this" {
   name      = var.name
   network   = var.network
   description = "Creates Firewall rule targetting tagged instances"
