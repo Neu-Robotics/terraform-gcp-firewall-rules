@@ -7,6 +7,6 @@ resource "google_compute_firewall" "this" {
     protocol = var.protocol
     ports    = var.ports
   }
-  target_tags   = ["${var.name}"]
+  target_tags   = ["${var.network}"]
   source_ranges = var.source_ranges
 }
